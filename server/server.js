@@ -53,7 +53,7 @@ mongoose
 
 // Graceful shutdown
 process.on('SIGINT', async () => {
-  console.log('Magnificiently - Shutting down gracefully...');
+  console.log('dev - Shutting down gracefully...');
   await mongoose.connection.close();
   process.exit(0);
 });
